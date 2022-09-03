@@ -2,13 +2,12 @@ import { Web3Storage, File, getFilesFromPath } from "web3.storage";
 const { resolve } = require("path");
 
 export default async function handler(req, res) {
-  console.log('IN THE HANDLER' + req.method)
   if (req.method === "POST") {
     return await storeEventData(req, res);
   } else {
     return res
       .status(405)
-      .json({ message: "method not allowed", success: false });
+      .json({ message: "Method not allowed", success: false });
   }
 }
 
@@ -36,7 +35,6 @@ async function makeFileObjects(body) {
 
   const imageDirectory = resolve(process.cwd(), `public/images/${body.image}`);
   const files = await getFilesFromPath(imageDirectory);
-
   files.push(new File([buffer], "data.json"));
   console.log(files);
   return files;
