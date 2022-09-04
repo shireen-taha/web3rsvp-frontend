@@ -1,10 +1,6 @@
-# Web3RSVP-frontend
+# Web3RSVP-frontend  ![Vercel](https://therealsujitk-vercel-badge.vercel.app/?app=web3rsvp-frontend)
 
-<p align="center">
-  A simple web3 events RSVP dApp built on Next.js, GraphQL, web3.storage, wagmi, Apollo Client, and Rainbowkit. Deployed with Netlify.
-  <br /><br />
-  <a href="https://app.netlify.com/sites/rsvpweb3/deploys"><img src="https://api.netlify.com/api/v1/badges/d23f499a-1084-4714-8b43-b97492351993/deploy-status" alt="Netlify Status" /></a>
-</p>
+A simple web3 events RSVP dApp built on Next.js, TheGraph, web3.storage, ethers.js, wagmi, Apollo Client, and Rainbowkit. Deployed with Vercel.
 
 ### Fork and clone the repo from Github to work with it locally
 
